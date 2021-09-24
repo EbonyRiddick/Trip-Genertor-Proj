@@ -9,24 +9,19 @@ let randomNumber2 = Math.floor(Math.random()*4);
 
 
 
-function determineDestination(){
-    let response = destination[randomNumber2];
-    return response;
-}
-let place = determineDestination();
-
-function determineTransportation(){
-    let how = transportation[randomNumber];
-    return how;
-}
-let mode = determineTransportation();
-
-function determineEntertainment(){
-    let fun = entertainment[randomNumber2];
-    return fun;
+function choseItem(someArray){
+    let result = Math.floor(Math.random()* someArray.length);
+    return result;
 }
 
-function determineResturant(){
-    let eat = resturant[randomNumber2];
-    return eat;
-}
+let chosenDest = choseItem(destination);
+let chosenTrans = choseItem(transportation);
+
+// alert or console.log the results
+
+// show them the results (alert or prompt)
+// Ask for confirm - tool to use: prompt
+// if no, prompt for choice to change - tool to use: conditional
+// repeat - tool to use: while lopp
+
+// if yes, show finals results (alert and console.log)
