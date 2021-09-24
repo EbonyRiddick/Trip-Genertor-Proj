@@ -21,12 +21,12 @@ function determineTransportation(){
 }
 let mode = determineTransportation();
 
-// function determineEntertainment(){
-//     console.log(entertainment[randomNumber]);
-//     return;
-// }
+function determineEntertainment(){
+    let fun = entertainment[randomNumber2];
+    return fun;
+}
 
-// function determineResturant(){
-//     console.log(resturant[randomNumber2]);
-//     return;
-// }
+function determineResturant(){
+    let eat = resturant[randomNumber2];
+    return eat;
+}
