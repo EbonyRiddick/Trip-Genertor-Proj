@@ -1,7 +1,8 @@
 let entertainment = ['A Wine Tour', 'The State Park', 'A Brewery Tour', 'A Festival'];
 let transportation = ["train", "Bus", "car"];
 let destination = ['South Carolina', 'Georgia', 'Alabama', 'Tennessee'];
-let resturant = ['Sea Food', 'BBQ', 'Southern Cuisine', 'Steak'];
+let resturant = ['Sea Food', 'BBQ', 'Southern Cuisine', 'Steak House'];
+
 
 let randomNumber = Math.floor(Math.random()*3);
 let randomNumber2 = Math.floor(Math.random()*4);
@@ -30,8 +31,9 @@ function choseRest(){
 }
 let chosenRest = choseRest();
 
+
 alert("       Here are your trip options!");
-console.log("You will be going to: " + chosenDest + "\n" + "By: " + chosenTrans + "\n" + "You will be going to/on: "  + chosenEnt + "\n" + "You will be having " + chosenRest + " for dinner");
+console.log("Destination: " + chosenDest + "\n" + "Transportation: " + chosenTrans + "\n" + "Entertainment: "  + chosenEnt + "\n" + "Resturant:" + chosenRest);
 
 // function choseItem(someArray){
 //     let result = Math.floor(Math.random()* someArray.length);
@@ -39,7 +41,7 @@ console.log("You will be going to: " + chosenDest + "\n" + "By: " + chosenTrans 
 // }
 //  = choseItem(destination);
 // console.log(chosenDest);
-// let chosenTrans = choseItem(transportation);
+//let chosenTrans = choseItem(transportation);
 // let chosenEnt = choseItem(entertainment);
 // let chosenRest = choseItem(resturant);
 
@@ -51,28 +53,37 @@ console.log("You will be going to: " + chosenDest + "\n" + "By: " + chosenTrans 
 
 // Ask for confirm - tool to use: prompt
 
-let answer = prompt("Are you satisfied with these options?");
-console.log(answer);
-
-// function confirmation(answer){
-//     if(answer.toLowerCase === "no"){
-//         prompt("Which detail would you like to change?");
-//     }
-//     else{
-//         console.log("Have a great trip!");
-//     }
+let answer = "no";
+let confirm= prompt("Are you happy with these options?");
+let ask;
+let confirmed = confirmation(answer);
+let tryingToFixIt = fixIt(confirmed);
+function confirmation(answer){
+    if(answer === "yes"){
+        return true;
+    }
+    else{
+        return false;
+        }
+}
+// function fixIt(confirmed){
+//      while (answer !== "yes"){
+       
+//      }
+//      if(ask === "")
+//      return confirmed;
 // }
 
 
 
 
 
-    
-    
 
 
 
-// if no, prompt for choice to change - tool to use: conditional
-// repeat - tool to use: while lopp
+
+// repeat - tool to use: while loop
+
+
 
 // if yes, show finals results (alert and console.log)
